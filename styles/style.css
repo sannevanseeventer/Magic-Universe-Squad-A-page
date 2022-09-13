@@ -61,14 +61,17 @@ body{
   box-shadow: 2px 2px 2px #000;
 }
 
-.omgedraaid:hover {
+.turned:hover {
   transform: translateY(-6rem) rotateY(180deg);
   background-color: #FFF;
   box-shadow: 2px 2px 2px #000;
 }
 
-.omgedraaid {
+.turned {
   transform: rotateY(180deg);
+  animation-name: turn-to-back;
+  animation-duration: 0.5s;
+  display: visible;
 }
 
 .card-face{
@@ -77,15 +80,33 @@ body{
   backface-visibility: hidden;
 }
 
-.omgedraaid > div > .card-face {
+.turned > div > .card-face {
   display: hidden;
-}
-
-.omgedraaid{
-  display: visible;
 }
 
 .card-label {
   position: absolute;
   display: block;
+}
+
+.face-up {
+  animation-name: turn-to-front;
+  animation-duration: 0.5s;
+  display: visible;
+}
+
+@keyframes turn-to-back
+{
+  0% {transform: translateY(0rem) rotateY(0deg);}
+  25% {transform: translateY(-1.5rem) rotateY(0deg);}
+  75% {transform: translateY(-1.5rem) rotateY(180deg);}
+  100% {transform: translateY(0rem) rotateY(180deg);}
+}
+
+@keyframes turn-to-front
+{
+  0% {transform: translateY(0rem) rotateY(180deg);}
+  25% {transform: translateY(-1.5rem) rotateY(180deg);}
+  75% {transform: translateY(-1.5rem) rotateY(0deg);}
+  100% {transform: translateY(0rem) rotateY(0deg);}
 }
