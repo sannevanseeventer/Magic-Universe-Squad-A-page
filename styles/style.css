@@ -11,7 +11,7 @@ body{
   overflow: hidden;
 }
 
-.container {
+.cards-container {
   width: 100%;
   margin-top: 30rem;
   background: #ddd;
