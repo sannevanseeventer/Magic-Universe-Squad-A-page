@@ -1,14 +1,60 @@
-* {}
+@import url(https://fonts.googleapis.com/css2?family=Abel);
+@import url(https://fonts.googleapis.com/css?family=Righteous);
 
+
+* {
+
+
+    background-color: #d4b0c9;
+    background-image: url("https://www.transparenttextures.com/patterns/psychedelic.png");
+}
 
 .container {
     width: 100%;
     margin-top: 30rem;
-    background: #ddd;
+    background: rgb(255, 255, 255);
     display: flex;
     flex-direction: row;
-    justify-content:center;
+    justify-content: center;
+
 }
+
+.title {
+
+    font-size: 160px;
+    text-align: center;
+    margin: 40px auto 0px;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-family: righteous;
+    color: white;
+    max-width: 1150px;
+
+    text-shadow: 10px 10px #BADEA6;
+
+    padding: 0px 6px;
+    transition: 0.8s;
+    transform: rotateZ(0deg);
+
+
+
+}
+
+
+
+
+.title:hover {
+    cursor: pointer;
+
+}
+
+
+
+
+
+
+
+
 
 .card {
     width: 13em;
@@ -17,24 +63,24 @@
     position: relative;
     background: #FFF;
     border-radius: 1rem;
-    padding: 2rem;
+    padding: 2.1rem;
     box-shadow: 4px 4px 12px 4px rgb(161, 161, 161);
     margin-left: -14.5rem;
     transition: 1s;
     flex-shrink: 0;
-    position: relative;
+    align-items: flex-end;
     transition: 1s;
     transform-style: preserve-3d;
 }
 
-.card-back{
+.card-back {
 
     padding: 0;
     width: 13em;
     height: 20em;
 }
 
-.card-back img{
+.card-back img {
     margin: 0;
     top: 0.5rem;
     left: 0.1rem;
@@ -51,41 +97,76 @@
     box-shadow: 2px 2px 2px #000;
 }
 
+.omdraaien {
+    display: inline-block;
+    background-color: #BADEA6;
+    align-items: center;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 20px;
+    margin-left: 30em;
+
+
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: seashell;
+    cursor: pointer;
+
+}
+
+.omdraaien:hover {
+    transform: (translateY(-4px));
+    box-shadow: 0 7px 0;
+}
+
+.omdraaien:focus {
+    outline: 0;
+}
+
+
+
+
+
+
+
 .omgedraaid:hover {
-  transform: translateY(-10rem) rotateY(180deg);
-  background-color: #FFF;
-  z-index: 2;
-  box-shadow: 2px 2px 2px #000;
+    transform: translateY(-10rem) rotateY(180deg);
+    background-color: #FFF;
+    z-index: 2;
+    box-shadow: 2px 2px 2px #000;
 }
 
 
 .omgedraaid {
-  transform: rotateY(180deg);
+    transform: rotateY(180deg);
 
 }
 
-.card-face{
-  display: visible;
-  position: absolute;
-  z-index: 2;
-  backface-visibility: hidden;
+.card-face {
+    display: visible;
+    position: absolute;
+    z-index: 2;
+    backface-visibility: hidden;
 }
 
-.omgedraaid > div > .card-face {
-  display: hidden;
+.omgedraaid>div>.card-face {
+    display: hidden;
 
 }
 
-.card-back{
-  display:hidden;
-  position: absolute;
-  backface-visibility: hidden;
+.card-back {
+    display: hidden;
+    position: absolute;
+    backface-visibility: hidden;
 }
 
-.card-back .omgedraaid{
-  display:visible;
+.card-back .omgedraaid {
+    display: visible;
+}
 
 .card-label {
-    position:absolute;
+    position: absolute;
     display: block;
 }
