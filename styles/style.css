@@ -28,7 +28,6 @@ body {
 }
 
 .title {
-
     font-size: 160px;
     text-align: center;
     margin: 40px auto 0px;
@@ -43,38 +42,12 @@ body {
     padding: 0px 6px;
     transition: 0.8s;
     transform: rotateZ(0deg);
-
-
-
 }
-
-
 
 .title:hover {
     cursor: pointer;
 
 }
-
-
-
-
-/* .card {
-
-    width: 13em;
-    height: 20em;
-    display: block;
-    position: relative;
-    background: #FFF;
-    border-radius: 1rem;
-    padding: 2.1rem;
-    box-shadow: 4px 4px 12px 4px rgb(161, 161, 161);
-    margin-left: -14.5rem;
-    transition: 1s;
-    flex-shrink: 0;
-    align-items: flex-end;
-    transition: 1s;
-    transform-style: preserve-3d;
-} */
 
 .card-back {
 
@@ -109,62 +82,23 @@ body {
     border-radius: 20px;
     margin-left: 30em;
 
-
     font-size: 20px;
     font-weight: 700;
     text-decoration: none;
     text-transform: uppercase;
     color: seashell;
     cursor: pointer;
-
 }
-
 
 .turn-cards-button:focus {
     outline: 0;
 }
-
-
-
 
 .turn-cards-button:hover {
     transform: translateY(-10rem) rotateY(180deg);
     background-color: #FFF;
     z-index: 2;
     box-shadow: 2px 2px 2px #000;
-}
-
-
-.turn-cards-button {
-    transform: rotateY(180deg);
-
-}
-
-/* .card-face {
-    display: visible;
-    position: absolute;
-    z-index: 2;
-    backface-visibility: hidden;
-} */
-
-.turned>div>.card-face {
-    display: hidden;
-
-}
-
-.card-back {
-    display: hidden;
-    position: absolute;
-    backface-visibility: hidden;
-}
-
-.card-back .turnCards {
-    display: visible;
-}
-
-.card-label {
-    position: absolute;
-    display: block;
 }
 
 .card {
@@ -180,6 +114,12 @@ body {
     transition: 0.4s;
     transform-style: preserve-3d;
     z-index: 1;
+}
+
+.card:hover {
+    transform: translateY(-6rem);
+    background-color: #fff;
+    box-shadow: 2px 2px 2px #000;
 }
 
 .card-back {
@@ -200,16 +140,9 @@ body {
     position: absolute;
 }
 
-.card:hover {
-    transform: translateY(-6rem);
-    background-color: #fff;
-    box-shadow: 2px 2px 2px #000;
-}
-
-.turned:hover {
-    transform: translateY(-6rem) rotateY(180deg);
-    background-color: #fff;
-    box-shadow: 2px 2px 2px #000;
+.card-label {
+    position: absolute;
+    display: block;
 }
 
 .turned {
@@ -219,20 +152,12 @@ body {
     display: visible;
 }
 
-/* .card-face {
-    display: visible;
-    position: absolute;
-    backface-visibility: hidden;
-} */
-
-/* .turned>div>.card-face {
-    display: hidden;
-} */
-
-.card-label {
-    position: absolute;
-    display: block;
+.turned:hover {
+    transform: translateY(-6rem) rotateY(180deg);
+    background-color: #fff;
+    box-shadow: 2px 2px 2px #000;
 }
+
 
 .face-up {
     animation-name: turn-to-front;
