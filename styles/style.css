@@ -1,12 +1,6 @@
 @import url(https://fonts.googleapis.com/css2?family=Abel);
 @import url(https://fonts.googleapis.com/css?family=Righteous);
 
-* {
-    margin: 0;
-    box-sizing: border-box;
-}
-
-
 body {
     margin: 0;
     height: 100vh;
@@ -19,21 +13,11 @@ body {
 * {
     margin: 0;
     box-sizing: border-box;
-    background-color: #d4b0c9;
-    background-image: url("https://www.transparenttextures.com/patterns/psychedelic.png");
+    /* background-color: #d4b0c9;
+    background-image: url("https://www.transparenttextures.com/patterns/psychedelic.png"); */
 }
 
-.container {
-    width: 100%;
-    margin-top: 30rem;
-    background: rgb(255, 255, 255);
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-
-.card-container {
+.cards-container {
     width: 100%;
     margin-top: 30rem;
     background: #ddd;
@@ -74,7 +58,7 @@ body {
 
 
 
-.card {
+/* .card {
 
     width: 13em;
     height: 20em;
@@ -90,7 +74,7 @@ body {
     align-items: flex-end;
     transition: 1s;
     transform-style: preserve-3d;
-}
+} */
 
 .card-back {
 
@@ -156,14 +140,14 @@ body {
 
 }
 
-.card-face {
+/* .card-face {
     display: visible;
     position: absolute;
     z-index: 2;
     backface-visibility: hidden;
-}
+} */
 
-.turnCards>div>.card-face {
+.turned>div>.card-face {
     display: hidden;
 
 }
@@ -191,10 +175,8 @@ body {
     background: #fff;
     border-radius: 1rem;
     box-shadow: 4px 4px 12px 4px rgb(161, 161, 161);
-    margin-left: -11.5rem;
-    transition: 1s;
+    margin-left: -10.5rem;
     flex-shrink: 0;
-    position: relative;
     transition: 0.4s;
     transform-style: preserve-3d;
     z-index: 1;
@@ -237,15 +219,15 @@ body {
     display: visible;
 }
 
-.card-face {
+/* .card-face {
     display: visible;
     position: absolute;
     backface-visibility: hidden;
-}
+} */
 
-.turned>div>.card-face {
+/* .turned>div>.card-face {
     display: hidden;
-}
+} */
 
 .card-label {
     position: absolute;
