@@ -141,7 +141,7 @@ body {
     backface-visibility: hidden;
 }
 
-.card-back h2 {
+.purple {
   font-family: "futura";
   font-size: 1.4rem;
   text-align: center;
@@ -167,7 +167,7 @@ body {
   position:absolute;
 }
 
-.card-back h3 {
+.green {
   font-family: "futura";
   font-size: 1.4rem;
   text-align: center;
@@ -193,7 +193,7 @@ body {
   position:absolute;
 }
 
-.card-back h4 {
+.yellow {
   font-family: "futura";
   font-size: 1.4rem;
   text-align: center;
@@ -219,7 +219,7 @@ body {
   position:absolute;
 }
 
-.card-back h5 {
+.blue {
   font-family: "futura";
   font-size: 1.4rem;
   text-align: center;
@@ -245,7 +245,7 @@ body {
   position:absolute;
 }
 
-.card-back h6 {
+.orange {
   font-family: "futura";
   font-size: 1.4rem;
   text-align: center;
@@ -313,10 +313,7 @@ body {
     animation-name: turn-to-front;
     animation-duration: 0.5s;
     display: visible;
-    
-
 }
-
 
 /* 
 Hieronder staan de animaties, je kunt ze aanpassen door extra keyframes toe te voegen of de bestaande aan te passen.
