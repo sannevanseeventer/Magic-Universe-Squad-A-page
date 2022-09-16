@@ -289,6 +289,8 @@ body {
     background-color: #fff;
     box-shadow: 4px 4px 12px 4px rgb(161, 161, 161);
 
+}
+
 
 .turned {
     transform: rotateY(180deg);
@@ -300,7 +302,7 @@ body {
 .card-label {
     position: absolute;
     display: block;
-
+}
 
 
 .face-up {
