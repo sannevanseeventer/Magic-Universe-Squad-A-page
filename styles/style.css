@@ -129,12 +129,6 @@ header {
     z-index: 1;
 }
 
-.card:hover {
-    transform: translateY(-6rem);
-    background-color: #fff;
-    box-shadow: 2px 2px 2px #000;
-}
-
 .card-back {
     padding: 0;
     width: 100%;
