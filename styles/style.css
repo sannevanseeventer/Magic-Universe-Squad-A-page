@@ -30,7 +30,6 @@ body {
 }
 
 .title {
-
     font-size: 160px;
     text-align: center;
     margin: 40px auto -20px;
@@ -42,7 +41,6 @@ body {
     padding: 0px 6px;
     transition: 0.8s;
     transform: rotateZ(0deg);
-  
 }
 
 .h1 {    
@@ -60,13 +58,10 @@ body {
   transition: 0.8s;    
   transform: rotateZ(0deg);}
 
-
 .title:hover {
     cursor: pointer;
 
 }
-
-
 
 .turn-cards-button {
     background-color: #f2dd8d;
@@ -84,24 +79,17 @@ body {
     transform: translateX(-50%) translateY(-50%);
     color: rgb(255, 255, 255);
     cursor: pointer;
-
 }
-
 
 .turn-cards-button:focus {
     outline: 0;
 }
-
-
-
 
 .turn-cards-button:hover {
     background-color: #f6b16d;
     color: rgb(255, 255, 255);
     z-index: 2;
 }
-
-
 
 .turned>div>.card-face {
     display: hidden;
@@ -130,6 +118,12 @@ body {
     transition: 0.4s;
     transform-style: preserve-3d;
     z-index: 1;
+}
+
+.card:hover {
+    transform: translateY(-6rem);
+    background-color: #fff;
+    box-shadow: 2px 2px 2px #000;
 }
 
 .card-back {
@@ -284,7 +278,6 @@ body {
 
 }
 
-
 .card:hover {
     transform: translateY(-6rem);
     background-color: #fff;
@@ -295,7 +288,7 @@ body {
     transform: translateY(-6rem) rotateY(180deg);
     background-color: #fff;
     box-shadow: 4px 4px 12px 4px rgb(161, 161, 161);
-}
+
 
 .turned {
     transform: rotateY(180deg);
@@ -307,7 +300,8 @@ body {
 .card-label {
     position: absolute;
     display: block;
-}
+
+
 
 .face-up {
     animation-name: turn-to-front;
