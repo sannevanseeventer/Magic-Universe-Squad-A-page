@@ -40,7 +40,7 @@ header {
 
 .cards-container {
     width: 100%;
-    height: calc((13rem * 768 / 479) - 15rem + 7rem);
+    height: 17em;
     bottom: 0;
     position: absolute;
     padding-left: 10.5rem;
@@ -51,37 +51,64 @@ header {
     justify-content: center;
     align-items: flex-end;
     overflow-y: hidden;
+
     /* flex-wrap: wrap; */
 }
+
+.cards-space {
+
+
+    /*background-color: #bab8e2;
+    background-image: url("https://www.transparenttextures.com/patterns/cubes.png");*/
+    background-size: auto;
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
 
 .title {
     font-size: 5rem;
     text-align: center;
     margin: 40px auto -20px;
     text-transform: uppercase;
-    text-shadow: 0px 10px #97a4b1;   
+    text-shadow: 0px 10px #97a4b1;
     font-weight: 900;
     font-family: "Futura";
-    color:  #aec4da;
+    color: #aec4da;
     padding: 0px 6px;
     transition: 0.8s;
     transform: rotateZ(0deg);
 }
 
-.h1 {    
-  font-size: 40px;    
-  text-align: center;    
-  margin: 40px auto 0;    
-  text-transform: uppercase;    
-  font-weight: 900;    
-  font-family: righteous;    
-  color: #aec4da;    
-  max-width: 1150px;    
-  top: 100%;      
-  max-width: 1150px;    
-  padding: 0px 6px;    
-  transition: 0.8s;    
-  transform: rotateZ(0deg);}
+.h1 {
+    font-size: 40px;
+    text-align: center;
+    margin: 40px auto 0;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-family: righteous;
+    color: #aec4da;
+    max-width: 1150px;
+    top: 100%;
+    max-width: 1150px;
+    padding: 0px 6px;
+    transition: 0.8s;
+    transform: rotateZ(0deg);
+}
 
 /* .title:hover {
     cursor: pointer;
@@ -95,7 +122,7 @@ header {
     padding: 15px 40px;
     border: none;
     border-radius: 20px;
-    margin-top:2em;
+    margin-top: 2em;
     margin-left: 3em;
     font-size: 20px;
     font-weight: 700;
@@ -155,136 +182,137 @@ header {
     display: block;
     position: absolute;
     backface-visibility: hidden;
+    transform: translateZ(-1);
 }
 
 .purple {
-  font-family: "futura";
-  font-size: 1.4rem;
-  text-align: center;
-  color: #bab8e2;
-  margin: 1em 0.5em 1em 0.5em;
-  justify-content: center;
-  display: block;
-  position: relative;
+    font-family: "futura";
+    font-size: 1.4rem;
+    text-align: center;
+    color: #bab8e2;
+    margin: 1em 0.5em 1em 0.5em;
+    justify-content: center;
+    display: block;
+    position: relative;
 
 }
 
 .button-front-purple {
-  width: 7rem;
-  height: 3rem;
-  color: #fff;
-  font-family: "Futura";
-  font-size: 1rem;
-  background-color: #bab8e2;
-  border-radius: 0.5em;
-  border: none;
-  margin: 1.5em 0.5em 1em 3em;
-  justify-content: center;
-  position:absolute;
+    width: 7rem;
+    height: 3rem;
+    color: #fff;
+    font-family: "Futura";
+    font-size: 1rem;
+    background-color: #bab8e2;
+    border-radius: 0.5em;
+    border: none;
+    margin: 1.5em 0.5em 1em 3em;
+    justify-content: center;
+    position: absolute;
 }
 
 .green {
-  font-family: "futura";
-  font-size: 1.4rem;
-  text-align: center;
-  color: #afd4b1;
-  margin: 1em 0.5em 1em 0.5em;
-  justify-content: center;
-  display: block;
-  position: relative;
+    font-family: "futura";
+    font-size: 1.4rem;
+    text-align: center;
+    color: #afd4b1;
+    margin: 1em 0.5em 1em 0.5em;
+    justify-content: center;
+    display: block;
+    position: relative;
 
 }
 
 .button-front-green {
-  width: 7rem;
-  height: 3rem;
-  color: #fff;
-  font-family: "Futura";
-  font-size: 1rem;
-  background-color: #afd4b1;
-  border-radius: 0.5em;
-  border: none;
-  margin: 1.5em 0.5em 1em 3em;
-  justify-content: center;
-  position:absolute;
+    width: 7rem;
+    height: 3rem;
+    color: #fff;
+    font-family: "Futura";
+    font-size: 1rem;
+    background-color: #afd4b1;
+    border-radius: 0.5em;
+    border: none;
+    margin: 1.5em 0.5em 1em 3em;
+    justify-content: center;
+    position: absolute;
 }
 
 .yellow {
-  font-family: "futura";
-  font-size: 1.4rem;
-  text-align: center;
-  color: #f2dd8d;
-  margin: 1em 0.5em 1em 0.5em;
-  justify-content: center;
-  display: block;
-  position: relative;
+    font-family: "futura";
+    font-size: 1.4rem;
+    text-align: center;
+    color: #f2dd8d;
+    margin: 1em 0.5em 1em 0.5em;
+    justify-content: center;
+    display: block;
+    position: relative;
 
 }
 
 .button-front-yellow {
-  width: 7rem;
-  height: 3rem;
-  color: #fff;
-  font-family: "Futura";
-  font-size: 1rem;
-  background-color: #f2dd8d;
-  border-radius: 0.5em;
-  border: none;
-  margin: 1.5em 0.5em 1em 3em;
-  justify-content: center;
-  position:absolute;
+    width: 7rem;
+    height: 3rem;
+    color: #fff;
+    font-family: "Futura";
+    font-size: 1rem;
+    background-color: #f2dd8d;
+    border-radius: 0.5em;
+    border: none;
+    margin: 1.5em 0.5em 1em 3em;
+    justify-content: center;
+    position: absolute;
 }
 
 .blue {
-  font-family: "futura";
-  font-size: 1.4rem;
-  text-align: center;
-  color: #aec4da;
-  margin: 1em 0.5em 1em 0.5em;
-  justify-content: center;
-  display: block;
-  position: relative;
+    font-family: "futura";
+    font-size: 1.4rem;
+    text-align: center;
+    color: #aec4da;
+    margin: 1em 0.5em 1em 0.5em;
+    justify-content: center;
+    display: block;
+    position: relative;
 
 }
 
 .button-front-blue {
-  width: 7rem;
-  height: 3rem;
-  color: #fff;
-  font-family: "Futura";
-  font-size: 1rem;
-  background-color: #aec4da;
-  border-radius: 0.5em;
-  border: none;
-  margin: 1.5em 0.5em 1em 3em;
-  justify-content: center;
-  position:absolute;
+    width: 7rem;
+    height: 3rem;
+    color: #fff;
+    font-family: "Futura";
+    font-size: 1rem;
+    background-color: #aec4da;
+    border-radius: 0.5em;
+    border: none;
+    margin: 1.5em 0.5em 1em 3em;
+    justify-content: center;
+    position: absolute;
 }
 
 .orange {
-  font-family: "futura";
-  font-size: 1.4rem;
-  text-align: center;
-  color: #f6ce99;
-  margin: 1em 0.5em 1em 0.5em;
-  justify-content: center;
-  display: block;
-  position: relative;
+    font-family: "futura";
+    font-size: 1.4rem;
+    text-align: center;
+    color: #f6ce99;
+    margin: 1em 0.5em 1em 0.5em;
+    justify-content: center;
+    display: block;
+    position: relative;
 
 }
 
 .button-front-orange {
-  width: 7rem;
-  height: 3rem;
-  color: #fff;
-  font-family: "Futura";
-  font-size: 1rem;
-  background-color: #f6ce99;
-  border-radius: 0.5em;
-  border: none;
-  margin: 1.5em 0.5em 1em 3em;
-  justify-content: center;
-  position:absolute;
+    width: 7rem;
+    height: 3rem;
+    color: #fff;
+    font-family: "Futura";
+    font-size: 1rem;
+    background-color: #f6ce99;
+    border-radius: 0.5em;
+    border: none;
+    margin: 1.5em 0.5em 1em 3em;
+    justify-content: center;
+    position: absolute;
 }
 
 .card-back img {
@@ -296,7 +324,7 @@ header {
     display: block;
     position: relative;
     border-radius: 100%;
-    box-shadow:0 0 3px 3px rgba(0, 0, 0, 0.167);
+    box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.167);
 
 }
 
@@ -319,11 +347,25 @@ header {
     animation-name: turn-to-back;
     animation-duration: 0.5s;
     display: visible;
+    /*background-color: #bab8e2;
+    background-image: url("https://www.transparenttextures.com/patterns/cubes.png");*/
+    background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg%27%3E<defs><pattern id='a' patternUnits='userSpaceOnUse' width='40' height='69.282' patternTransform='scale(2) rotate(0)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(243, 42%, 80%, 1)'/><path d='M13.333-3.849v23.094M6.667-15.396l20 11.547M13.333-19.245l20 11.547M20 0v23.094m20-34.641l-6.667 3.849-6.666 3.849L20 0M0-11.547l6.667 3.849 6.666 3.849L20 0m0-23.094l20 11.547v23.094L20 23.094l-6.667-3.849-6.666-3.849L0 11.547v-23.094l6.667-3.849 6.666-3.849zM40-3.769L20 7.698m20-3.849l-16.253 9.384L20 15.396M6.667-7.698v23.094m6.666 50.037v23.094M6.667 53.886l20 11.547M13.333 50.037l20 11.547M20 69.282v23.094m20-34.641l-6.667 3.849-6.666 3.849L20 69.282M0 57.735l6.667 3.849 6.666 3.849L20 69.282m0-23.094l20 11.547v23.094L20 92.376l-6.667-3.849-6.666-3.849L0 80.829V57.735l6.667-3.849 6.666-3.849zm20 19.325L20 76.98m20-3.849L20 84.678M6.667 61.584v23.094m26.666-53.886v23.094m-6.666-34.641l20 11.547M33.333 15.396l20 11.547M40 34.641v23.094m20-34.641l-6.667 3.849-6.666 3.849L40 34.641M20 23.094l6.667 3.849 6.666 3.849L40 34.641m0-23.094l20 11.547v23.094L40 57.735l-6.667-3.849-6.666-3.849L20 46.188V23.094l6.667-3.849 6.666-3.849zm20 19.325L40 42.339m20-3.849L40 50.037M26.667 26.943v23.094M-6.667 30.792v23.094m-6.666-34.641l20 11.547M-6.667 15.396l20 11.547M0 34.641v23.094m20-34.641l-6.667 3.849-6.666 3.849L0 34.641m-20-11.547l6.667 3.849 6.666 3.849L0 34.641m0-23.094l20 11.547v23.094L0 57.735l-6.667-3.849-6.666-3.849L-20 46.188V23.094l6.667-3.849 6.666-3.849zm20 19.325L0 42.339m20-3.849L0 50.037m-13.333-23.094v23.094'  stroke-width='1' stroke='hsla(259, 9%, 93%, 1)' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>");
+    background-size: auto;
+
+
+
+
 }
 
 .card-front {
     position: absolute;
     display: block;
+    width: 100%;
+    height: 100%;
+    transform: translateZ(1) rotateY(180deg);
+    z-index: 2;
+    backface-visibility: visible;
+
 }
 
 
@@ -375,5 +417,3 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes
         transform: translateY(0rem) rotateY(0deg);
     }
 }
-
-
