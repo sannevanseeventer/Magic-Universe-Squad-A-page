@@ -299,7 +299,7 @@ body {
     display: visible;
 }
 
-.card-label {
+.card-front {
     position: absolute;
     display: block;
 }
