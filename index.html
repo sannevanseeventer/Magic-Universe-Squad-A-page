@@ -4,16 +4,23 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Magic-universe</title>
     <link rel="stylesheet" href="styles/style.css">
-    <script src="scripts/main.js"></script>
+    <script src="scri   pts/main.js"></script>
 </head>
 
 <body>
+
+<header>
     <div class="title">SQUAD A</div>
 
-    <button class="turn-cards-button" onclick="turnCards()">turn</button>
+    <div class="toggle">
+        <div class="toggle-fill" id="toggle-fill"><button class="toggle-input" onclick="turnCards()" id="turn-button"></button></div> 
+      </div>
 
+</header>
+
+    
     <section>
 
         <!-- CARD - 1 -->
@@ -27,7 +34,8 @@
                 </div>
 
                 <div class="card-back">
-                    <img src="assets/purple.png" />
+                    <img class="dark" src="assets/darkpurple.png" media="(prefers-color-scheme: dark)">
+                    <img class="light" src="assets/purple.png" media="(prefers-color-scheme: light)">
                 </div>
             </div>
         </div>
@@ -43,7 +51,8 @@
                 </div>
 
                 <div class="card-back">
-                    <img src="assets/orange.png" />
+                    <img class="dark" src="assets/darkorange.png" media="(prefers-color-scheme: dark)">
+                    <img class="light" src="assets/orange.png" media="(prefers-color-scheme: light)">
                 </div>
             </div>
         </div>
@@ -59,7 +68,8 @@
                 </div>
 
                 <div class="card-back">
-                    <img src="assets/blue.png" />
+                    <img class="dark" src="assets/darkblue.png" media="(prefers-color-scheme: dark)">
+                    <img class="light" src="assets/blue.png" media="(prefers-color-scheme: light)">
                 </div>
             </div>
         </div>
@@ -75,7 +85,8 @@
                 </div>
 
                 <div class="card-back">
-                    <img src="assets/yellow.png" />
+                    <img class="dark" src="assets/darkyellow.png" media="(prefers-color-scheme: dark)">
+                    <img class="light" src="assets/yellow.png" media="(prefers-color-scheme: light)">
                 </div>
             </div>
         </div>
@@ -91,7 +102,8 @@
                 </div>
 
                 <div class="card-back">
-                    <img src="assets/green.png" />
+                    <img class="dark" src="assets/darkgreen.png" media="(prefers-color-scheme: dark)">
+                    <img class="light" src="assets/green.png" media="(prefers-color-scheme: light)">
                 </div>
             </div>
         </div>
@@ -107,7 +119,8 @@
                 </div>
 
                 <div class="card-back">
-                    <img src="assets/purple.png" />
+                    <img class="dark" src="assets/darkpurple.png" media="(prefers-color-scheme: dark)">
+                    <img class="light" src="assets/purple.png" media="(prefers-color-scheme: light)">
                 </div>
             </div>
         </div>
@@ -123,7 +136,8 @@
                 </div>
 
                 <div class="card-back">
-                    <img src="assets/orange.png" />
+                    <img class="dark" src="assets/darkorange.png" media="(prefers-color-scheme: dark)">
+                    <img class="light" src="assets/orange.png" media="(prefers-color-scheme: light)">
                 </div>
             </div>
         </div>
@@ -139,7 +153,8 @@
                 </div>
 
                 <div class="card-back">
-                    <img src="assets/blue.png" />
+                    <img class="dark" src="assets/darkblue.png" media="(prefers-color-scheme: dark)">
+                    <img class="light" src="assets/blue.png" media="(prefers-color-scheme: light)">
                 </div>
             </div>
         </div>
@@ -155,7 +170,8 @@
                 </div>
 
                 <div class="card-back">
-                    <img src="assets/yellow.png" />
+                    <img class="dark" src="assets/darkyellow.png" media="(prefers-color-scheme: dark)">
+                    <img class="light" src="assets/yellow.png" media="(prefers-color-scheme: light)">
                 </div>
             </div>
         </div>
@@ -171,7 +187,8 @@
                 </div>
 
                 <div class="card-back">
-                    <img src="assets/green.png" />
+                    <img class="dark" src="assets/darkgreen.png" media="(prefers-color-scheme: dark)">
+                    <img class="light" src="assets/green.png" media="(prefers-color-scheme: light)">
                 </div>
             </div>
         </div>
@@ -187,7 +204,8 @@
                 </div>
 
                 <div class="card-back">
-                    <img src="assets/purple.png" />
+                    <img class="dark" src="assets/darkpurple.png" media="(prefers-color-scheme: dark)">
+                    <img class="light" src="assets/purple.png" media="(prefers-color-scheme: light)">
                 </div>
             </div>
         </div>
@@ -203,7 +221,8 @@
                 </div>
 
                 <div class="card-back">
-                    <img src="assets/orange.png" />
+                    <img class="dark" src="assets/darkorange.png" media="(prefers-color-scheme: dark)">
+                    <img class="light" src="assets/orange.png" media="(prefers-color-scheme: light)">
                 </div>
             </div>
         </div>
@@ -219,7 +238,8 @@
                 </div>
 
                 <div class="card-back">
-                    <img src="assets/blue.png" />
+                    <img class="dark" src="assets/darkblue.png" media="(prefers-color-scheme: dark)">
+                    <img class="light" src="assets/blue.png" media="(prefers-color-scheme: light)">
                 </div>
             </div>
         </div>
@@ -235,7 +255,8 @@
                 </div>
 
                 <div class="card-back">
-                    <img src="assets/yellow.png" />
+                    <img class="dark" src="assets/darkyellow.png" media="(prefers-color-scheme: dark)">
+                    <img class="light" src="assets/yellow.png" media="(prefers-color-scheme: light)">
                 </div>
             </div>
         </div>
@@ -251,7 +272,8 @@
                 </div>
 
                 <div class="card-back">
-                    <img src="assets/green.png" />
+                    <img class="dark" src="assets/darkgreen.png" media="(prefers-color-scheme: dark)">
+                    <img class="light" src="assets/green.png" media="(prefers-color-scheme: light)">
                 </div>
             </div>
         </div>
@@ -267,7 +289,8 @@
                 </div>
 
                 <div class="card-back">
-                    <img src="assets/purple.png" />
+                    <img class="dark" src="assets/darkpurple.png" media="(prefers-color-scheme: dark)">
+                    <img class="light" src="assets/purple.png" media="(prefers-color-scheme: light)">
                 </div>
             </div>
         </div>
@@ -283,7 +306,8 @@
                 </div>
 
                 <div class="card-back">
-                    <img src="assets/orange.png" />
+                    <img class="dark" src="assets/darkorange.png" media="(prefers-color-scheme: dark)">
+                    <img class="light" src="assets/orange.png" media="(prefers-color-scheme: light)">
                 </div>
             </div>
         </div>
@@ -299,7 +323,8 @@
                 </div>
 
                 <div class="card-back">
-                    <img src="assets/blue.png" />
+                    <img class="dark" src="assets/darkblue.png" media="(prefers-color-scheme: dark)">
+                    <img class="light" src="assets/blue.png" media="(prefers-color-scheme: light)">
                 </div>
             </div>
         </div>
@@ -315,7 +340,8 @@
                 </div>
 
                 <div class="card-back">
-                    <img src="assets/yellow.png" />
+                    <img class="dark" src="assets/darkyellow.png" media="(prefers-color-scheme: dark)">
+                    <img class="light" src="assets/yellow.png" media="(prefers-color-scheme: light)">>
                 </div>
             </div>
         </div>
@@ -331,7 +357,8 @@
                 </div>
 
                 <div class="card-back">
-                    <img src="assets/green.png" />
+                    <img class="dark" src="assets/darkgreen.png" media="(prefers-color-scheme: dark)">
+                    <img class="light" src="assets/green.png" media="(prefers-color-scheme: light)">
                 </div>
             </div>
         </div>
@@ -347,7 +374,8 @@
                 </div>
 
                 <div class="card-back">
-                    <img src="assets/purple.png" />
+                    <img class="dark" src="assets/darkpurple.png" media="(prefers-color-scheme: dark)">
+                    <img class="light" src="assets/purple.png" media="(prefers-color-scheme: light)">
                 </div>
             </div>
         </div>
@@ -363,7 +391,8 @@
                 </div>
 
                 <div class="card-back">
-                    <img src="assets/blue.png" />
+                    <img class="dark" src="assets/darkblue.png" media="(prefers-color-scheme: dark)">
+                    <img class="light" src="assets/blue.png" media="(prefers-color-scheme: light)">
                 </div>
             </div>
         </div>
