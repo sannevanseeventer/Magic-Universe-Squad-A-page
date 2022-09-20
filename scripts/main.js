@@ -6,7 +6,7 @@ function delay(time) {
 // Functie voor het omdraaien van alle kaarten (wordt geroepen door de knop)
 async function turnCards() {
   // Eén voor één alle kaarten langs om ze te laten draaien
-  for (let i = 1; i <= 25; i++) {
+  for (let i = 1; i <= 22; i++) {
     let card = document.getElementById(i);
 
     card.classList.toggle("turned");

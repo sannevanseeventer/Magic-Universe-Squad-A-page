@@ -1,93 +1,91 @@
-@import url(https://fonts.googleapis.com/css2?family=Abel);
-@import url(https://fonts.googleapis.com/css?family=Righteous);
-
-body {
-    --color-accent: #13C4A3;
-    --color-black: #1C1C1C;
-    --color-main: #36F1CD;
-    --color-card: #ECEBE4;
-    --color-background: #fff;
-    --color-white: #FAFAFF;
-
-    margin: 0;
-    height: 100vh;
-    display: grid;
-    place-items: center;
-    overflow: hidden;
-    background-color: var(--color-background);
-}
-
-
 * {
     margin: 0;
     box-sizing: border-box;
 }
 
-body {
+body{
+    margin: 0;
     height: 100vh;
-    display: flex;
-    flex-direction: column;
+    display: grid;
     place-items: center;
     overflow: hidden;
     background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='70' height='8' patternTransform='scale(2) rotate(0)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(0, 0%, 92%, 1)'/><path d='M-.02 22c8.373 0 11.938-4.695 16.32-9.662C20.785 7.258 25.728 2 35 2c9.272 0 14.215 5.258 18.7 10.338C58.082 17.305 61.647 22 70.02 22M-.02 14.002C8.353 14 11.918 9.306 16.3 4.339 20.785-.742 25.728-6 35-6 44.272-6 49.215-.742 53.7 4.339c4.382 4.967 7.947 9.661 16.32 9.664M70 6.004c-8.373-.001-11.918-4.698-16.3-9.665C49.215-8.742 44.272-14 35-14c-9.272 0-14.215 5.258-18.7 10.339C11.918 1.306 8.353 6-.02 6.002'  stroke-width='1' stroke='hsla(259, 0%, 94%, 1)' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>")
 }
 
-header {
-    width: 100%;
-    /* flex-direction: row; */
-    justify-content: center;
-}
-
-.cards-container {
-    width: 100%;
-    height: calc((13rem * 768 / 479) - 15rem + 7rem);
-    bottom: 0;
-    position: absolute;
-    padding-left: 10.5rem;
-    margin-bottom: 0;
-    background: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-end;
-    overflow-y: hidden;
-    /* flex-wrap: wrap; */
-}
-
+/*TITLE*/
 .title {
     font-size: 5rem;
     text-align: center;
-    margin: 40px auto -20px;
+    margin: 20px auto -20px;
     text-transform: uppercase;
-    text-shadow: 0px 10px #97a4b1;   
+    text-shadow: 0px 10px #97a4b1;
     font-weight: 900;
     font-family: "Futura";
-    color:  #aec4da;
+    color: #aec4da;
     padding: 0px 6px;
     transition: 0.8s;
     transform: rotateZ(0deg);
 }
 
-.h1 {    
-  font-size: 40px;    
-  text-align: center;    
-  margin: 40px auto 0;    
-  text-transform: uppercase;    
-  font-weight: 900;    
-  font-family: righteous;    
-  color: #aec4da;    
-  max-width: 1150px;    
-  top: 100%;      
-  max-width: 1150px;    
-  padding: 0px 6px;    
-  transition: 0.8s;    
-  transform: rotateZ(0deg);}
+/*CARDS SECTION*/
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
-/* .title:hover {
+/* CARDS PER PIECE*/
+.card {
+    perspective: 1000px;
+    margin: -5rem;
+
+}
+
+/* CARD HOVER*/
+.card:hover {
+    transform: translateY(-6rem);
     cursor: pointer;
+}
 
-} */
+/* SET SAME COLUMN AND ROW FOR BOTH CARD */
+.card-container {
+    margin-bottom: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    transition: all 1s ease;
+    transform-style: preserve-3d;
+}
 
+/* CARDS */
+.card-back {
+    grid-area: 1 / 1;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    width: 13em;
+    height: 19em;
+    display: block;
+    position: relative;
+    background: #fff;
+    border-radius: 1rem;
+    box-shadow: 4px 4px 8px 4px #c1c1c1;
+}
+
+.card-front {
+    height: 19em;
+    display: block;
+    position: relative;
+    background: #fff;
+    border-radius: 1rem;
+    box-shadow: 4px 4px 8px 4px #c1c1c1;
+    grid-area: 1 / 1;
+}
+
+/* HOVER */
+.card:hover .card-container {
+    transform: rotateY(180deg);
+}
+
+/* BUTTON */
 .turn-cards-button {
     background-color: #f2dd8d;
     position: relative;
@@ -95,7 +93,7 @@ header {
     padding: 15px 40px;
     border: none;
     border-radius: 20px;
-    margin-top:2em;
+    margin-top: 2em;
     margin-left: 3em;
     font-size: 20px;
     font-weight: 700;
@@ -116,178 +114,8 @@ header {
     z-index: 2;
 }
 
-.turned>div>.card-face {
-    display: hidden;
-}
-
-.card-back .turnCards {
-    display: visible;
-}
-
-.card-label {
-    position: absolute;
-    display: block;
-}
-
-.card {
-    width: 13em;
-    height: calc(13rem * 768 / 479);
-    display: block;
-    position: relative;
-    background: #fff;
-    border-radius: 1rem;
-    box-shadow: 4px 4px 8px 4px #c1c1c1;
-    margin-left: -10.5rem;
-    margin-bottom: -15rem;
-    flex-shrink: 0;
-    transition: 0.4s;
-    transform-style: preserve-3d;
-    z-index: 1;
-}
-
-.card-back {
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    top: 0.5rem;
-    left: 0.1rem;
-    display: block;
-    position: absolute;
-    backface-visibility: hidden;
-}
-
-.purple {
-  font-family: "futura";
-  font-size: 1.4rem;
-  text-align: center;
-  color: #bab8e2;
-  margin: 1em 0.5em 1em 0.5em;
-  justify-content: center;
-  display: block;
-  position: relative;
-
-}
-
-.button-front-purple {
-  width: 7rem;
-  height: 3rem;
-  color: #fff;
-  font-family: "Futura";
-  font-size: 1rem;
-  background-color: #bab8e2;
-  border-radius: 0.5em;
-  border: none;
-  margin: 1.5em 0.5em 1em 3em;
-  justify-content: center;
-  position:absolute;
-}
-
-.green {
-  font-family: "futura";
-  font-size: 1.4rem;
-  text-align: center;
-  color: #afd4b1;
-  margin: 1em 0.5em 1em 0.5em;
-  justify-content: center;
-  display: block;
-  position: relative;
-
-}
-
-.button-front-green {
-  width: 7rem;
-  height: 3rem;
-  color: #fff;
-  font-family: "Futura";
-  font-size: 1rem;
-  background-color: #afd4b1;
-  border-radius: 0.5em;
-  border: none;
-  margin: 1.5em 0.5em 1em 3em;
-  justify-content: center;
-  position:absolute;
-}
-
-.yellow {
-  font-family: "futura";
-  font-size: 1.4rem;
-  text-align: center;
-  color: #f2dd8d;
-  margin: 1em 0.5em 1em 0.5em;
-  justify-content: center;
-  display: block;
-  position: relative;
-
-}
-
-.button-front-yellow {
-  width: 7rem;
-  height: 3rem;
-  color: #fff;
-  font-family: "Futura";
-  font-size: 1rem;
-  background-color: #f2dd8d;
-  border-radius: 0.5em;
-  border: none;
-  margin: 1.5em 0.5em 1em 3em;
-  justify-content: center;
-  position:absolute;
-}
-
-.blue {
-  font-family: "futura";
-  font-size: 1.4rem;
-  text-align: center;
-  color: #aec4da;
-  margin: 1em 0.5em 1em 0.5em;
-  justify-content: center;
-  display: block;
-  position: relative;
-
-}
-
-.button-front-blue {
-  width: 7rem;
-  height: 3rem;
-  color: #fff;
-  font-family: "Futura";
-  font-size: 1rem;
-  background-color: #aec4da;
-  border-radius: 0.5em;
-  border: none;
-  margin: 1.5em 0.5em 1em 3em;
-  justify-content: center;
-  position:absolute;
-}
-
-.orange {
-  font-family: "futura";
-  font-size: 1.4rem;
-  text-align: center;
-  color: #f6ce99;
-  margin: 1em 0.5em 1em 0.5em;
-  justify-content: center;
-  display: block;
-  position: relative;
-
-}
-
-.button-front-orange {
-  width: 7rem;
-  height: 3rem;
-  color: #fff;
-  font-family: "Futura";
-  font-size: 1rem;
-  background-color: #f6ce99;
-  border-radius: 0.5em;
-  border: none;
-  margin: 1.5em 0.5em 1em 3em;
-  justify-content: center;
-  position:absolute;
-}
-
-.card-back img {
+/*CARD IMAGES*/
+.card-front img {
     width: 8rem;
     height: 8rem;
     padding: 0;
@@ -296,84 +124,152 @@ header {
     display: block;
     position: relative;
     border-radius: 100%;
-    box-shadow:0 0 3px 3px rgba(0, 0, 0, 0.167);
-
+    box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.167);
 }
 
-.card:hover {
-    transform: translateY(-6rem);
-    background-color: #fff;
-    box-shadow: 4px 4px 12px 4px rgb(161, 161, 161);
-    cursor: pointer;
-}
-
-.turned:hover {
-    transform: translateY(-6rem) rotateY(180deg);
-    background-color: #fff;
-    box-shadow: 2px 2px 2px rgb(161, 161, 161);
-    cursor: pointer;
-}
-
-.turned {
-    transform: rotateY(180deg);
-    animation-name: turn-to-back;
-    animation-duration: 0.5s;
-    display: visible;
-}
-
-.card-front {
-    position: absolute;
+.card-back img {
+    width: 85%;
+    height: 90%;
+    border-radius: 6%;
+    margin: 1em 1em 1em 1em;
+    padding: 0;
+    justify-content: center;
     display: block;
+    position: relative;
 }
 
+/* PURPLE TEXT + BUTTON */
+.purple {
+    font-family: "futura";
+    font-size: 1.4rem;
+    text-align: center;
+    color: #bab8e2;
+    margin: 1em 0.5em 1em 0.5em;
+    justify-content: center;
+    display: block;
+    position: relative;
 
-.face-up {
-    animation-name: turn-to-front;
-    animation-duration: 0.5s;
-    display: visible;
 }
 
-/* 
-Hieronder staan de animaties, je kunt ze aanpassen door extra keyframes toe te voegen of de bestaande aan te passen.
-
-    Meer info:
-https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes
-*/
-
-@keyframes turn-to-back {
-    0% {
-        transform: translateY(0rem) rotateY(0deg);
-    }
-
-    25% {
-        transform: translateY(-1.5rem) rotateY(0deg);
-    }
-
-    75% {
-        transform: translateY(-1.5rem) rotateY(180deg);
-    }
-
-    100% {
-        transform: translateY(0rem) rotateY(180deg);
-    }
+.button-front-purple {
+    width: 7rem;
+    height: 3rem;
+    color: #fff;
+    font-family: "Futura";
+    font-size: 1rem;
+    background-color: #bab8e2;
+    border-radius: 0.5em;
+    border: none;
+    margin: 1.5em 0.5em 1em 3em;
+    justify-content: center;
+    position: absolute;
 }
 
-@keyframes turn-to-front {
-    0% {
-        transform: translateY(0rem) rotateY(180deg);
-    }
+/* ORANGE TEXT + BUTTON */
+.orange {
+    font-family: "futura";
+    font-size: 1.4rem;
+    text-align: center;
+    color: #f6ce99;
+    margin: 1em 0.5em 1em 0.5em;
+    justify-content: center;
+    display: block;
+    position: relative;
 
-    25% {
-        transform: translateY(-1.5rem) rotateY(180deg);
-    }
-
-    75% {
-        transform: translateY(-1.5rem) rotateY(0deg);
-    }
-
-    100% {
-        transform: translateY(0rem) rotateY(0deg);
-    }
 }
 
+.button-front-orange {
+    width: 7rem;
+    height: 3rem;
+    color: #fff;
+    font-family: "Futura";
+    font-size: 1rem;
+    background-color: #f6ce99;
+    border-radius: 0.5em;
+    border: none;
+    margin: 1.5em 0.5em 1em 3em;
+    justify-content: center;
+    position: absolute;
+}
+
+/* BLUE TEXT + BUTTON */
+.blue {
+    font-family: "futura";
+    font-size: 1.4rem;
+    text-align: center;
+    color: #aec4da;
+    margin: 1em 0.5em 1em 0.5em;
+    justify-content: center;
+    display: block;
+    position: relative;
+
+}
+
+.button-front-blue {
+    width: 7rem;
+    height: 3rem;
+    color: #fff;
+    font-family: "Futura";
+    font-size: 1rem;
+    background-color: #aec4da;
+    border-radius: 0.5em;
+    border: none;
+    margin: 1.5em 0.5em 1em 3em;
+    justify-content: center;
+    position: absolute;
+}
+
+/* YELLOW TEXT + BUTTON */
+.yellow {
+    font-family: "futura";
+    font-size: 1.4rem;
+    text-align: center;
+    color: #f2dd8d;
+    margin: 1em 0.5em 1em 0.5em;
+    justify-content: center;
+    display: block;
+    position: relative;
+
+}
+
+.button-front-yellow {
+    width: 7rem;
+    height: 3rem;
+    color: #fff;
+    font-family: "Futura";
+    font-size: 1rem;
+    background-color: #f2dd8d;
+    border-radius: 0.5em;
+    border: none;
+    margin: 1.5em 0.5em 1em 3em;
+    justify-content: center;
+    position: absolute;
+}
+
+/* GREEN TEXT + BUTTON */
+.green {
+    font-family: "futura";
+    font-size: 1.4rem;
+    text-align: center;
+    color: #afd4b1;
+    margin: 1em 0.5em 1em 0.5em;
+    justify-content: center;
+    display: block;
+    position: relative;
+
+}
+
+.button-front-green {
+    width: 7rem;
+    height: 3rem;
+    color: #fff;
+    font-family: "Futura";
+    font-size: 1rem;
+    background-color: #afd4b1;
+    border-radius: 0.5em;
+    border: none;
+    margin: 1.5em 0.5em 1em 3em;
+    justify-content: center;
+    position: absolute;
+}
 
