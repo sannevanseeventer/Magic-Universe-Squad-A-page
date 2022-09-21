@@ -45,6 +45,8 @@ header {
   font-family: "Poppins";
   color: var(--title-color);
   padding: 0px 6px;
+  transition: 0.8s;
+  transform: rotateZ(0deg);
 }
 
 /*CARDS SECTION*/
@@ -118,10 +120,10 @@ section {
   transform-style: preserve-3d;
 }
 
-/* HOVER */
+/* HOVER 
 .card:hover .card-container {
   transform: rotateY(180deg);
-}
+}*/
 
 /*CARD IMAGES*/
 .card-front img {
@@ -341,13 +343,13 @@ section {
 /* selectie classes */
 
 .selected {
-    margin-top: -27rem !important;
-    transform: rotateY(0deg);
+  margin-top: -27rem !important;
+  transform: rotateY(0deg);
 }
 
 .selected:hover {
-    transform: translateY(0) !important;
-  }
+  transform: translateY(0) !important;
+}
 
 /* darkmode */
 
@@ -430,7 +432,6 @@ section {
     font-size: 4rem;
   }
 }
-*/
 
 /*m
 /* @media (min-width: 768px) {
@@ -439,8 +440,8 @@ section {
   }
 } */
 
-@media (max-width: 1000px) {
-}
+/* @media (max-width: 1000px) {
+} */
 
-@media (min-width: 1200px) {
-}
+/* @media (min-width: 1200px) {
+} */
