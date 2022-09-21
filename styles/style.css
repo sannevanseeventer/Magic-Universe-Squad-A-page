@@ -38,8 +38,6 @@ body {
   font-family: "Poppins";
   color: var(--title-color);
   padding: 0px 6px;
-  transition: 0.8s;
-  transform: rotateZ(0deg);
 }
 
 /*CARDS SECTION*/
@@ -53,6 +51,7 @@ section {
 .card {
   perspective: 1000px;
   margin: -5rem;
+  transition: 0.3s;
 }
 
 /* CARD HOVER*/
@@ -82,16 +81,25 @@ section {
   background: var(--card-background);
   border-radius: 1rem;
   box-shadow: 4px 4px 8px 4px var(--card-shadow);
+  animation-name: turn-to-back;
+  animation-duration: 0.5s;
+  z-index: 2;
+  transform-style: preserve-3d;
 }
 
 .card-front {
   height: 19em;
   display: block;
   position: relative;
+  backface-visibility: hidden;
   background: var(--card-background);
   border-radius: 1rem;
   box-shadow: 4px 4px 8px 4px var(--card-shadow);
   grid-area: 1 / 1;
+  animation-name: turn-to-back;
+  animation-duration: 0.5s;
+  z-index: 3;
+  transform-style: preserve-3d;
 }
 
 /* HOVER 
@@ -299,7 +307,22 @@ section {
   transform: translateX(var(--height));
 }
 
-/*darkmode*/
+/* animatie classes */
+
+.face-down {
+    transform: rotateY(180deg);
+    animation-name: turn-to-back;
+    animation-duration: 0.5s;
+    transform-style: preserve-3d;
+}
+
+.face-up {
+    animation-name: turn-to-front;
+    animation-duration: 0.5s;
+    transform-style: preserve-3d;
+}
+
+/* darkmode */
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -327,26 +350,48 @@ section {
   }
 }
 
-/*responsive*/
+/* animaties */
+
+@keyframes turn-to-back {
+    0% {transform: translateY(0rem) rotateY(0deg);}
+
+    25% {transform: translateY(-1.5rem) rotateY(0deg);}
+
+    75% {transform: translateY(-1.5rem) rotateY(180deg);}
+
+    100% {transform: translateY(0rem) rotateY(180deg);}
+}
+
+@keyframes turn-to-front {
+    0% {transform: translateY(0rem) rotateY(180deg);}
+
+    25% {transform: translateY(-1.5rem) rotateY(180deg);}
+
+    75% {transform: translateY(-1.5rem) rotateY(0deg);}
+
+    100% {transform: translateY(0rem) rotateY(0deg);}
+}
+
+/* responsive */
 
 /*s*/
-@media (max-width: 500px) {
+/* @media (max-width: 500px) {
   section {
     overflow-x: scroll;
   }
-}
+} */
 
 /*m*/
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   section {
     overflow-x: scroll;
   }
-}
+} */
 
 /*l*/
-@media (min-width: 1000px) {
-}
+/* @media (min-width: 1000px) {
+} */
 
 /*xl*/
-@media (min-width: 1200px) {
-}
+/* @media (min-width: 1200px) {
+} */
