@@ -403,7 +403,7 @@ section {
     width: var(--width);
     height: var(--height);
     border-radius: var(--border-radius);
-    background-color: #dddddd83;
+    background-color: #53b2f183;
     transition: background-color 0.2s;
     cursor: pointer;
 }
