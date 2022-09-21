@@ -256,7 +256,7 @@ section {
 /*toggle switch*/
 
 .toggle {
-  --width: 6em;
+  --width: 5em;
   --height: calc(var(--width) / 2);
   --border-radius: calc(var(--height) / 2);
   align-self: right;
@@ -305,7 +305,7 @@ section {
   :root {
     --green: hotpink;
     --card-background: rgb(63, 63, 63);
-    --card-shadow: #000000;
+    --card-shadow: #131313;
     --purple: #81809b;
     --blue: #64778b;
     --green: #7a947b;
@@ -325,4 +325,28 @@ section {
   .dark {
     visibility: hidden;
   }
+}
+
+/*responsive*/
+
+/*s*/
+@media (max-width: 500px) {
+  section {
+    overflow-x: scroll;
+  }
+}
+
+/*m*/
+@media (min-width: 768px) {
+  section {
+    overflow-x: scroll;
+  }
+}
+
+/*l*/
+@media (min-width: 1000px) {
+}
+
+/*xl*/
+@media (min-width: 1200px) {
 }
