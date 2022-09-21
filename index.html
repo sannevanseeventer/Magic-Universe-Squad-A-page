@@ -4,17 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Magic-universe</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/style.css" />
     <script src="scripts/main.js"></script>
-</head>
+  </head>
 
-<!-- 
+  <!-- 
 
   face-down en face-up classes worden gebruikt voor de flip animatie
 
  -->
 
 <body onload="addEventListeners()">
+  <body>
+    <header>
+      <div class="title">SQUAD A</div>
 
       <div class="toggle">
         <div class="toggle-fill" id="toggle-fill">
@@ -28,31 +31,32 @@
     </header>
 
     <section>
+    <div class="scroll-container">
       <!-- CARD - 1 -->
       <div class="card face-up no-selected" id="1">
         <div class="card-container">
-          <div class="card-front">
-            <h2 class="purple">Badr</h2>
-            <img src="assets/Badr.jpg" alt="foto Badr" />
-           <!--<button class="button-front-purple" aria-label="visitekaartje">
-              Visitekaartje
-            </button>-->
-            <a class= "purple-front" href="url">link text</a>
-          </div>
+            <div class="card-front">
+                <h2 class="purple">Badr</h2>
+                <img src="assets/Badr.jpg" alt="foto Badr" />
+            <!--<button class="button-front-purple" aria-label="visitekaartje">
+                Visitekaartje
+                </button>-->
+                <a class= "purple-front" href="url">link text</a>
+            </div>
 
-          <div class="card-back">
-            <img
-              class="dark"
-              src="assets/darkpurple.png"
-              media="(prefers-color-scheme: dark)"
-            />
-            <img
-              class="light"
-              src="assets/purple.png"
-              media="(prefers-color-scheme: light)"
-            />
-          </div>
-        </div>
+            <div class="card-back">
+                <img
+                class="dark"
+                src="assets/darkpurple.png"
+                media="(prefers-color-scheme: dark)"
+                />
+                <img
+                class="light"
+                src="assets/purple.png"
+                media="(prefers-color-scheme: light)"
+                />
+            </div>
+            </div>
       </div>
     </header>
 
@@ -79,7 +83,8 @@
             />
           </div>
         </div>
-      </div>
+    </div>
+    
 
       <!-- CARD - 3 -->
       <div class="card face-up no-selected" id="3">
@@ -106,7 +111,7 @@
             />
           </div>
         </div>
-      </div>
+        </div>
 
       <!-- CARD - 4 -->
       <div class="card face-up no-selected" id="4">
@@ -134,7 +139,7 @@
             />
           </div>
         </div>
-      </div>
+        </div>
 
       <!-- CARD - 5 -->
       <div class="card face-up no-selected" id="5">
@@ -161,7 +166,7 @@
             />
           </div>
         </div>
-      </div>
+        </div>
 
       <!-- CARD - 6 -->
       <div class="card face-up no-selected" id="6">
@@ -189,7 +194,7 @@
             />
           </div>
         </div>
-      </div>
+        </div>
 
       <!-- CARD - 7 -->
       <div class="card face-up no-selected" id="7">
@@ -216,7 +221,7 @@
             />
           </div>
         </div>
-      </div>
+        </div>
 
       <!-- CARD - 8 -->
       <div class="card face-up no-selected" id="8">
@@ -244,7 +249,7 @@
             />
           </div>
         </div>
-      </div>
+        </div>
 
       <!-- CARD - 9 -->
       <div class="card face-up no-selected" id="9">
@@ -272,7 +277,7 @@
             />
           </div>
         </div>
-      </div>
+        </div>
 
       <!-- CARD - 10 -->
       <div class="card face-up no-selected" id="10">
@@ -300,7 +305,7 @@
             />
           </div>
         </div>
-      </div>
+        </div>
 
       <!-- CARD - 11 -->
       <div class="card face-up no-selected" id="11">
@@ -328,7 +333,7 @@
             />
           </div>
         </div>
-      </div>
+        </div>
 
       <!-- CARD - 12 -->
       <div class="card face-up no-selected" id="12">
@@ -355,7 +360,7 @@
             />
           </div>
         </div>
-      </div>
+        </div>
 
       <!-- CARD - 13 -->
       <div class="card face-up no-selected" id="13">
@@ -383,7 +388,7 @@
             />
           </div>
         </div>
-      </div>
+        </div>
 
       <!-- CARD - 14 -->
       <div class="card face-up no-selected" id="14">
@@ -409,7 +414,7 @@
             />
           </div>
         </div>
-      </div>
+        </div>
 
       <!-- CARD - 15 -->
       <div class="card face-up no-selected" id="15">
@@ -437,7 +442,7 @@
             />
           </div>
         </div>
-      </div>
+        </div>
 
       <!-- CARD - 16 -->
       <div class="card face-up no-selected" id="16">
@@ -465,7 +470,7 @@
             />
           </div>
         </div>
-      </div>
+        </div>
 
       <!-- CARD - 17 -->
       <div class="card face-up no-selected" id="17">
@@ -493,7 +498,7 @@
             />
           </div>
         </div>
-      </div>
+        </div>
 
       <!-- CARD - 18 -->
       <div class="card face-up no-selected" id="18">
@@ -520,7 +525,7 @@
             />
           </div>
         </div>
-      </div>
+        </div>
 
       <!-- CARD - 19 -->
       <div class="card face-up no-selected" id="19">
@@ -548,7 +553,7 @@
             />
           </div>
         </div>
-      </div>
+        </div>
 
       <!-- CARD - 20 -->
       <div class="card face-up no-selected" id="20">
@@ -575,7 +580,7 @@
             />
           </div>
         </div>
-      </div>
+        </div>
 
       <!-- CARD - 21 -->
       <div class="card face-up no-selected" id="21">
@@ -603,7 +608,7 @@
             />
           </div>
         </div>
-      </div>
+        </div>
 
       <!-- CARD - 22 -->
       <div class="card face-up no-selected" id="22">
@@ -630,6 +635,7 @@
             />
           </div>
         </div>
+      </div>
       </div>
     </section>
   </body>
