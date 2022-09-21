@@ -45,6 +45,7 @@ section {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-bottom: -15rem;
 }
 
 /* CARDS PER PIECE*/
@@ -55,8 +56,13 @@ section {
 }
 
 /* CARD HOVER*/
-.card:hover {
+.face-up:hover {
   transform: translateY(-6rem);
+  cursor: pointer;
+}
+
+.face-down:hover {
+  transform: translateY(-6rem) rotateY(180deg);
   cursor: pointer;
 }
 
@@ -128,7 +134,7 @@ section {
   padding: 0;
   justify-content: center;
   display: block;
-  position: relative;
+  position: absolute;
 }
 
 /* PURPLE TEXT + BUTTON */
@@ -321,6 +327,17 @@ section {
     animation-duration: 0.5s;
     transform-style: preserve-3d;
 }
+
+/* selectie classes */
+
+.selected {
+    margin-top: -27rem !important;
+    transform: rotateY(0deg);
+}
+
+.selected:hover {
+    transform: translateY(0) !important;
+  }
 
 /* darkmode */
 
