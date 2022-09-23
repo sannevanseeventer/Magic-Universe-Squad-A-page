@@ -187,12 +187,12 @@ section {
     padding: 14px 15px;
     width: 9rem;
     height: 3rem;
-    border-radius: 20px;
+    border-radius: 0.6rem;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     border: none;
-    margin: 1.5em 0.5em 1em 3em;
+    margin: 1.3em 0.5em 1em 2em;
     justify-content: center;
     position: absolute;
     cursor: pointer;
@@ -234,12 +234,12 @@ section {
     padding: 14px 15px;
     width: 9rem;
     height: 3rem;
-    border-radius: 20px;
+    border-radius: 0.6rem;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     border: none;
-    margin: 1.5em 0.5em 1em 3em;
+    margin: 1.3em 0.5em 1em 2em;
     justify-content: center;
     position: absolute;
     cursor: pointer;
@@ -282,12 +282,12 @@ section {
     padding: 14px 15px;
     width: 9rem;
     height: 3rem;
-    border-radius: 20px;
+    border-radius: 0.6rem;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     border: none;
-    margin: 1.5em 0.5em 1em 3em;
+    margin: 1.3em 0.5em 1em 2em;
     justify-content: center;
     position: absolute;
     cursor: pointer;
@@ -332,12 +332,12 @@ section {
     padding: 14px 15px;
     width: 9rem;
     height: 3rem;
-    border-radius: 20px;
+    border-radius: 0.6rem;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     border: none;
-    margin: 1.5em 0.5em 1em 3em;
+    margin: 1.3em 0.5em 1em 2em;
     justify-content: center;
     position: absolute;
     cursor: pointer;
@@ -379,12 +379,12 @@ section {
     padding: 14px 15px;
     width: 9rem;
     height: 3rem;
-    border-radius: 20px;
+    border-radius: 0.6rem;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     border: none;
-    margin: 1.5em 0.5em 1em 3em;
+    margin: 1.3em 0.5em 1em 2em;
     justify-content: center;
     position: absolute;
     cursor: pointer;
@@ -552,7 +552,7 @@ section {
     }
 
     .title {
-        font-size: 2rem;
+        font-size: 5rem;
     }
 
     .scroll-container {
