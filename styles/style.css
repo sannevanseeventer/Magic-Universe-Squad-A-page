@@ -61,9 +61,9 @@ section {
   bottom: 0;
   left: 0; */
     width: 100%;
-    height: 100%;
+    height: 130%;
     overflow-x: scroll;
-    overflow-y: hidden;
+    overflow-y: visible;
 }
 
 .scroll-container {
@@ -469,13 +469,11 @@ section {
 /* selectie classes */
 
 .selected {
-    margin-top: -27rem !important;
-    transform: rotateY(0deg);
+    transform: rotateY(0deg) translateY(-22rem);
 }
 
 .selected:hover {
-    transform: translateY(0) !important;
-    transform: translateY(0) !important;
+    transform: rotateY(0deg) translateY(-22rem);
 }
 
 /* darkmode */
