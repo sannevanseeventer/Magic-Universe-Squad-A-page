@@ -13,31 +13,3 @@ Voor de tweede opdracht zijn wij in een groepje bezig geweest met het maken van 
 <h2>Concept</h2>
 Het idee van onze overzichtspagina is een kaartspel met al onze visitekaartjes van de studenten in squad A. Als je op een kaartje klikt vergroot deze in het midden en als je op de knop klikt ga je naar het persoonlijke visitekaartje. Als je op de knop drukt draaien alle kaarten om. Je kan dan zonder te zien wie je kiest een visitekaartje kiezen en je laten verrassen!
 
-
-
-
-
-
-<h3>Kenmerken</h3>
-
-- code:
- HTML,
- CSS,
- JavaScript en
- Tribe API 
-
-
-- Tools:
- Figma
-Visual Studio code 
-
-
-
-<h2>Installatie & Gebruik</h2>
-
-N.V.T.
-
-<h2>Licentie</h2>
-
-N.V.T
-
