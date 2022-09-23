@@ -1,321 +1,149 @@
-@import url(https://fonts.googleapis.com/css2?family=Abel);
-@import url(https://fonts.googleapis.com/css?family=Righteous);
-
-body {
-    --color-accent: #13C4A3;
-    --color-black: #1C1C1C;
-    --color-main: #36F1CD;
-    --color-card: #ECEBE4;
-    --color-background: #fff;
-    --color-white: #FAFAFF;
-
-    margin: 0;
-    height: 100vh;
-    display: grid;
-    place-items: center;
-    overflow: hidden;
-    background-color: var(--color-background);
-}
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap%27");
 
 * {
     margin: 0;
     box-sizing: border-box;
 }
 
+:root {
+    --text-shadow: #97a4b1;
+    --title-color: #aec4da;
+    --card-background: #fff;
+    --card-shadow: #c1c1c1;
+    --img-shadow: rgba(0, 0, 0, 0.167);
+    --purple: #bab8e2;
+    --orange: #f6ce99;
+    --green: #afd4b1;
+    --yellow: #f2dd8d;
+    --blue: #aec4da;
+}
+
 body {
+    margin: 0;
     height: 100vh;
-    display: flex;
-    flex-direction: column;
+    display: grid;
     place-items: center;
     overflow: hidden;
-    background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='70' height='8' patternTransform='scale(2) rotate(0)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(0, 0%, 92%, 1)'/><path d='M-.02 22c8.373 0 11.938-4.695 16.32-9.662C20.785 7.258 25.728 2 35 2c9.272 0 14.215 5.258 18.7 10.338C58.082 17.305 61.647 22 70.02 22M-.02 14.002C8.353 14 11.918 9.306 16.3 4.339 20.785-.742 25.728-6 35-6 44.272-6 49.215-.742 53.7 4.339c4.382 4.967 7.947 9.661 16.32 9.664M70 6.004c-8.373-.001-11.918-4.698-16.3-9.665C49.215-8.742 44.272-14 35-14c-9.272 0-14.215 5.258-18.7 10.339C11.918 1.306 8.353 6-.02 6.002'  stroke-width='1' stroke='hsla(259, 0%, 94%, 1)' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>")
+    max-width: 100%;
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+
+    background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='70' height='8' patternTransform='scale(2) rotate(0)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(0, 0%, 92%, 1)'/><path d='M-.02 22c8.373 0 11.938-4.695 16.32-9.662C20.785 7.258 25.728 2 35 2c9.272 0 14.215 5.258 18.7 10.338C58.082 17.305 61.647 22 70.02 22M-.02 14.002C8.353 14 11.918 9.306 16.3 4.339 20.785-.742 25.728-6 35-6 44.272-6 49.215-.742 53.7 4.339c4.382 4.967 7.947 9.661 16.32 9.664M70 6.004c-8.373-.001-11.918-4.698-16.3-9.665C49.215-8.742 44.272-14 35-14c-9.272 0-14.215 5.258-18.7 10.339C11.918 1.306 8.353 6-.02 6.002'  stroke-width='1' stroke='hsla(259, 0%, 94%, 1)' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>");
+}
+
+body::-webkit-scrollbar {
+    display: none;
 }
 
 header {
-    width: 100%;
-    /* flex-direction: row; */
-    justify-content: center;
-}
-
-.cards-container {
-    width: 100%;
-    height: 17em;
-    bottom: 0;
-    position: absolute;
-    padding-left: 10.5rem;
-    margin-bottom: 0;
-    background: none;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-end;
-    overflow-y: hidden;
-
-    /* flex-wrap: wrap; */
-}
-
-.cards-space {
-
-
-    /*background-color: #bab8e2;
-    background-image: url("https://www.transparenttextures.com/patterns/cubes.png");*/
-    background-size: auto;
-
-
-
-
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-.title {
-    font-size: 5rem;
-    text-align: center;
-    margin: 40px auto -20px;
-    text-transform: uppercase;
-    text-shadow: 0px 10px #97a4b1;
-    font-weight: 900;
-    font-family: "Futura";
-    color: #aec4da;
-    padding: 0px 6px;
-    transition: 0.8s;
-    transform: rotateZ(0deg);
-}
-
-.h1 {
-    font-size: 40px;
-    text-align: center;
-    margin: 40px auto 0;
-    text-transform: uppercase;
-    font-weight: 900;
-    font-family: righteous;
-    color: #aec4da;
-    max-width: 1150px;
-    top: 100%;
-    max-width: 1150px;
-    padding: 0px 6px;
-    transition: 0.8s;
-    transform: rotateZ(0deg);
-}
-
-/* .title:hover {
-    cursor: pointer;
-
-} */
-
-.turn-cards-button {
-    background-color: #f2dd8d;
-    position: relative;
     align-items: center;
-    padding: 15px 40px;
-    border: none;
-    border-radius: 20px;
-    margin-top: 2em;
-    margin-left: 3em;
-    font-size: 20px;
-    font-weight: 700;
-    text-decoration: none;
+}
+
+/*TITLE*/
+.title {
+    font-size: 7rem;
+    text-align: center;
+    margin: 20px auto 10px;
     text-transform: uppercase;
-    transform: translateX(-50%) translateY(-50%);
-    color: rgb(255, 255, 255);
+    text-shadow: 0px 10px var(--text-shadow);
+    font-weight: 900;
+    font-family: "Poppins";
+    color: var(--title-color);
+    padding: 10px 6px;
+}
+
+/*CARDS SECTION*/
+section {
+    /* position: absolute;
+  bottom: 0;
+  left: 0; */
+    width: 100%;
+    height: 130%;
+    overflow-x: scroll;
+    overflow-y: visible;
+}
+
+.scroll-container {
+    padding-left: 8.5em;
+    padding-right: 3em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: max-content;
+    height: 100%;
+    align-items: flex-end;
+}
+
+/* CARDS PER PIECE*/
+.card {
+    perspective: 1000px;
+    margin: 0 -5rem;
+    transition: 0.3s;
+}
+
+/* CARD HOVER*/
+.face-up:hover {
+    transform: translateY(-6rem);
     cursor: pointer;
 }
 
-.turn-cards-button:focus {
-    outline: 0;
+.face-down:hover {
+    transform: translateY(-6rem) rotateY(180deg);
+    cursor: pointer;
 }
 
-.turn-cards-button:hover {
-    background-color: #f6b16d;
-    color: rgb(255, 255, 255);
-    z-index: 2;
-}
-
-.turned>div>.card-face {
-    display: hidden;
-}
-
-.card-back .turnCards {
-    display: visible;
-}
-
-.card-label {
-    position: absolute;
-    display: block;
-}
-
-.card {
-    width: 13em;
-    height: calc(13rem * 768 / 479);
-    display: block;
-    position: relative;
-    background: #fff;
-    border-radius: 1rem;
-    box-shadow: 4px 4px 8px 4px #c1c1c1;
-    margin-left: -10.5rem;
-    margin-bottom: -15rem;
-    flex-shrink: 0;
-    transition: 0.4s;
+/* SET SAME COLUMN AND ROW FOR BOTH CARD */
+.card-container {
+    margin-bottom: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    transition: all 1s ease;
     transform-style: preserve-3d;
-    z-index: 1;
 }
 
+/* CARDS */
 .card-back {
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    top: 0.5rem;
-    left: 0.1rem;
-    display: block;
-    position: absolute;
+    grid-area: 1 / 1;
+    transform: rotateY(180deg);
     backface-visibility: hidden;
-    transform: translateZ(-1);
-}
-
-.purple {
-    font-family: "futura";
-    font-size: 1.4rem;
-    text-align: center;
-    color: #bab8e2;
-    margin: 1em 0.5em 1em 0.5em;
-    justify-content: center;
+    width: 13em;
+    height: 19em;
     display: block;
     position: relative;
-
+    background: var(--card-background);
+    border-radius: 1rem;
+    box-shadow: 4px 4px 8px 4px var(--card-shadow);
+    animation-name: turn-to-back;
+    animation-duration: 0.5s;
+    z-index: 2;
+    transform-style: preserve-3d;
 }
 
-.button-front-purple {
-    width: 7rem;
-    height: 3rem;
-    color: #fff;
-    font-family: "Futura";
-    font-size: 1rem;
-    background-color: #bab8e2;
-    border-radius: 0.5em;
-    border: none;
-    margin: 1.5em 0.5em 1em 3em;
-    justify-content: center;
-    position: absolute;
-}
-
-.green {
-    font-family: "futura";
-    font-size: 1.4rem;
-    text-align: center;
-    color: #afd4b1;
-    margin: 1em 0.5em 1em 0.5em;
-    justify-content: center;
+.card-front {
+    height: 19em;
     display: block;
     position: relative;
-
+    backface-visibility: hidden;
+    background: var(--card-background);
+    border-radius: 1rem;
+    box-shadow: 4px 4px 8px 4px var(--card-shadow);
+    grid-area: 1 / 1;
+    animation-name: turn-to-back;
+    animation-duration: 0.5s;
+    z-index: 3;
+    transform-style: preserve-3d;
 }
 
-.button-front-green {
-    width: 7rem;
-    height: 3rem;
-    color: #fff;
-    font-family: "Futura";
-    font-size: 1rem;
-    background-color: #afd4b1;
-    border-radius: 0.5em;
-    border: none;
-    margin: 1.5em 0.5em 1em 3em;
-    justify-content: center;
-    position: absolute;
+/* HOVER 
+.card:hover .card-container {
+    transform: rotateY(180deg);
 }
 
-.yellow {
-    font-family: "futura";
-    font-size: 1.4rem;
-    text-align: center;
-    color: #f2dd8d;
-    margin: 1em 0.5em 1em 0.5em;
-    justify-content: center;
-    display: block;
-    position: relative;
-
-}
-
-.button-front-yellow {
-    width: 7rem;
-    height: 3rem;
-    color: #fff;
-    font-family: "Futura";
-    font-size: 1rem;
-    background-color: #f2dd8d;
-    border-radius: 0.5em;
-    border: none;
-    margin: 1.5em 0.5em 1em 3em;
-    justify-content: center;
-    position: absolute;
-}
-
-.blue {
-    font-family: "futura";
-    font-size: 1.4rem;
-    text-align: center;
-    color: #aec4da;
-    margin: 1em 0.5em 1em 0.5em;
-    justify-content: center;
-    display: block;
-    position: relative;
-
-}
-
-.button-front-blue {
-    width: 7rem;
-    height: 3rem;
-    color: #fff;
-    font-family: "Futura";
-    font-size: 1rem;
-    background-color: #aec4da;
-    border-radius: 0.5em;
-    border: none;
-    margin: 1.5em 0.5em 1em 3em;
-    justify-content: center;
-    position: absolute;
-}
-
-.orange {
-    font-family: "futura";
-    font-size: 1.4rem;
-    text-align: center;
-    color: #f6ce99;
-    margin: 1em 0.5em 1em 0.5em;
-    justify-content: center;
-    display: block;
-    position: relative;
-
-}
-
-.button-front-orange {
-    width: 7rem;
-    height: 3rem;
-    color: #fff;
-    font-family: "Futura";
-    font-size: 1rem;
-    background-color: #f6ce99;
-    border-radius: 0.5em;
-    border: none;
-    margin: 1.5em 0.5em 1em 3em;
-    justify-content: center;
-    position: absolute;
-}
-
-.card-back img {
+/*CARD IMAGES*/
+.card-front img {
     width: 8rem;
     height: 8rem;
     padding: 0;
@@ -324,63 +152,360 @@ header {
     display: block;
     position: relative;
     border-radius: 100%;
-    box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.167);
-
+    box-shadow: 0 0 3px 3px var(--img-shadow);
 }
 
-.card:hover {
-    transform: translateY(-6rem);
-    background-color: #fff;
-    box-shadow: 4px 4px 12px 4px rgb(161, 161, 161);
+.card-back img {
+    width: 85%;
+    height: 90%;
+    border-radius: 6%;
+    margin: 1em 1em 1em 1em;
+    padding: 0;
+    justify-content: center;
+    display: block;
+    position: absolute;
+}
+
+/* PURPLE TEXT + BUTTON */
+.purple {
+    font-family: "Poppins";
+    font-size: 1.4rem;
+    text-align: center;
+    color: var(--purple);
+    margin: 1em 0.5em 1em 0.5em;
+    justify-content: center;
+    display: block;
+    position: relative;
+}
+
+.purple-front:link,
+.purple-front:visited {
+    background-color: var(--purple);
+    color: white;
+    font-family: "Poppins";
+    font-size: 1rem;
+    padding: 14px 15px;
+    width: 9rem;
+    height: 3rem;
+    border-radius: 0.6rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border: none;
+    margin: 1.3em 0.5em 1em 2em;
+    justify-content: center;
+    position: absolute;
     cursor: pointer;
 }
 
-.turned:hover {
-    transform: translateY(-6rem) rotateY(180deg);
-    background-color: #fff;
-    box-shadow: 2px 2px 2px rgb(161, 161, 161);
+/*.purple-front {
+    width: 7rem;
+    height: 3rem;
+    color: #fff;
+    font-family: "Poppins";
+    font-size: 1rem;
+    background-color: var(--purple);
+    border-radius: 0.5em;
+    border: none;
+    margin: 1.5em 0.5em 1em 3em;
+    justify-content: center;
+    position: absolute;
+    cursor: pointer;
+}*/
+
+/* ORANGE TEXT + BUTTON */
+.orange {
+    font-family: "Poppins";
+    font-size: 1.4rem;
+    text-align: center;
+    color: var(--orange);
+    margin: 1em 0.5em 1em 0.5em;
+    justify-content: center;
+    display: block;
+    position: relative;
+}
+
+.orange-front:link,
+.orange-front:visited {
+    background-color: var(--orange);
+    color: white;
+    font-family: "Poppins";
+    font-size: 1rem;
+    padding: 14px 15px;
+    width: 9rem;
+    height: 3rem;
+    border-radius: 0.6rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border: none;
+    margin: 1.3em 0.5em 1em 2em;
+    justify-content: center;
+    position: absolute;
     cursor: pointer;
 }
 
-.turned {
+
+/*.orange-front {
+    width: 7rem;
+    height: 3rem;
+    color: #fff;
+    font-family: "Poppins";
+    font-size: 1rem;
+    background-color: var(--orange);
+    border-radius: 0.5em;
+    border: none;
+    margin: 1.5em 0.5em 1em 3em;
+    justify-content: center;
+    position: absolute;
+    cursor: pointer;
+}*/
+
+/* BLUE TEXT + BUTTON */
+.blue {
+    font-family: "Poppins";
+    font-size: 1.4rem;
+    text-align: center;
+    color: var(--blue);
+    margin: 1em 0.5em 1em 0.5em;
+    justify-content: center;
+    display: block;
+    position: relative;
+}
+
+.blue-front:link,
+.blue-front:visited {
+    background-color: var(--blue);
+    color: white;
+    font-family: "Poppins";
+    font-size: 1rem;
+    padding: 14px 15px;
+    width: 9rem;
+    height: 3rem;
+    border-radius: 0.6rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border: none;
+    margin: 1.3em 0.5em 1em 2em;
+    justify-content: center;
+    position: absolute;
+    cursor: pointer;
+}
+
+
+
+
+/*.blue-front {
+    width: 7rem;
+    height: 3rem;
+    color: #fff;
+    font-family: "Poppins";
+    font-size: 1rem;
+    background-color: var(--blue);
+    border-radius: 0.5em;
+    border: none;
+    margin: 1.5em 0.5em 1em 3em;
+    justify-content: center;
+    position: absolute;
+    cursor: pointer;
+}*/
+
+/* YELLOW TEXT + BUTTON */
+.yellow {
+    font-family: "Poppins";
+    font-size: 1.4rem;
+    text-align: center;
+    color: var(--yellow);
+    margin: 1em 0.5em 1em 0.5em;
+    justify-content: center;
+    display: block;
+    position: relative;
+}
+
+.yellow-front:link,
+.yellow-front:visited {
+    background-color: var(--yellow);
+    color: white;
+    font-family: "Poppins";
+    font-size: 1rem;
+    padding: 14px 15px;
+    width: 9rem;
+    height: 3rem;
+    border-radius: 0.6rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border: none;
+    margin: 1.3em 0.5em 1em 2em;
+    justify-content: center;
+    position: absolute;
+    cursor: pointer;
+}
+
+/*.yellow-front {
+    width: 7rem;
+    height: 3rem;
+    color: #fff;
+    font-family: "Poppins";
+    font-size: 1rem;
+    background-color: var(--yellow);
+    border-radius: 0.5em;
+    border: none;
+    margin: 1.5em 0.5em 1em 3em;
+    justify-content: center;
+    position: absolute;
+    cursor: pointer;
+}*/
+
+/* GREEN TEXT + BUTTON */
+.green {
+    font-family: "Poppins";
+    font-size: 1.4rem;
+    text-align: center;
+    color: var(--green);
+    margin: 1em 0.5em 1em 0.5em;
+    justify-content: center;
+    display: block;
+    position: relative;
+}
+
+.green-front:link,
+.green-front:visited {
+    background-color: var(--green);
+    color: white;
+    font-family: "Poppins";
+    font-size: 1rem;
+    padding: 14px 15px;
+    width: 9rem;
+    height: 3rem;
+    border-radius: 0.6rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border: none;
+    margin: 1.3em 0.5em 1em 2em;
+    justify-content: center;
+    position: absolute;
+    cursor: pointer;
+}
+
+/*.green-front {
+    width: 7rem;
+    height: 3rem;
+    color: #fff;
+    font-family: "Poppins";
+    font-size: 1rem;
+    background-color: var(--green);
+    border-radius: 0.5em;
+    border: none;
+    margin: 1.5em 0.5em 1em 3em;
+    justify-content: center;
+    position: absolute;
+    cursor: pointer;
+}*/
+
+/*toggle switch*/
+
+.toggle {
+    --width: 5em;
+    --height: calc(var(--width) / 2);
+    --border-radius: calc(var(--height) / 2);
+    align-self: right;
+
+    margin-right: var(--right);
+    margin-left: calc(vw - var(--width) - var(--right));
+    display: inline-block;
+    cursor: pointer;
+}
+
+.toggle-fill {
+    position: relative;
+    width: var(--width);
+    height: var(--height);
+    border-radius: var(--border-radius);
+    background-color: #53b2f183;
+    transition: background-color 0.2s;
+    cursor: pointer;
+}
+
+.toggled {
+    background-color: #009578;
+}
+
+.toggle-input {
+    content: "";
+    position: absolute;
+    top: calc(50% - var(--height) / 2);
+    left: calc(50% - var(--height));
+    height: var(--height);
+    width: var(--height);
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    border-radius: var(--border-radius);
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+
+.on {
+    transform: translateX(var(--height));
+}
+
+/* animatie classes */
+
+.face-down {
     transform: rotateY(180deg);
     animation-name: turn-to-back;
     animation-duration: 0.5s;
-    display: visible;
-    /*background-color: #bab8e2;
-    background-image: url("https://www.transparenttextures.com/patterns/cubes.png");*/
-    background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg%27%3E<defs><pattern id='a' patternUnits='userSpaceOnUse' width='40' height='69.282' patternTransform='scale(2) rotate(0)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(243, 42%, 80%, 1)'/><path d='M13.333-3.849v23.094M6.667-15.396l20 11.547M13.333-19.245l20 11.547M20 0v23.094m20-34.641l-6.667 3.849-6.666 3.849L20 0M0-11.547l6.667 3.849 6.666 3.849L20 0m0-23.094l20 11.547v23.094L20 23.094l-6.667-3.849-6.666-3.849L0 11.547v-23.094l6.667-3.849 6.666-3.849zM40-3.769L20 7.698m20-3.849l-16.253 9.384L20 15.396M6.667-7.698v23.094m6.666 50.037v23.094M6.667 53.886l20 11.547M13.333 50.037l20 11.547M20 69.282v23.094m20-34.641l-6.667 3.849-6.666 3.849L20 69.282M0 57.735l6.667 3.849 6.666 3.849L20 69.282m0-23.094l20 11.547v23.094L20 92.376l-6.667-3.849-6.666-3.849L0 80.829V57.735l6.667-3.849 6.666-3.849zm20 19.325L20 76.98m20-3.849L20 84.678M6.667 61.584v23.094m26.666-53.886v23.094m-6.666-34.641l20 11.547M33.333 15.396l20 11.547M40 34.641v23.094m20-34.641l-6.667 3.849-6.666 3.849L40 34.641M20 23.094l6.667 3.849 6.666 3.849L40 34.641m0-23.094l20 11.547v23.094L40 57.735l-6.667-3.849-6.666-3.849L20 46.188V23.094l6.667-3.849 6.666-3.849zm20 19.325L40 42.339m20-3.849L40 50.037M26.667 26.943v23.094M-6.667 30.792v23.094m-6.666-34.641l20 11.547M-6.667 15.396l20 11.547M0 34.641v23.094m20-34.641l-6.667 3.849-6.666 3.849L0 34.641m-20-11.547l6.667 3.849 6.666 3.849L0 34.641m0-23.094l20 11.547v23.094L0 57.735l-6.667-3.849-6.666-3.849L-20 46.188V23.094l6.667-3.849 6.666-3.849zm20 19.325L0 42.339m20-3.849L0 50.037m-13.333-23.094v23.094'  stroke-width='1' stroke='hsla(259, 9%, 93%, 1)' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>");
-    background-size: auto;
-
-
-
-
+    transform-style: preserve-3d;
 }
-
-.card-front {
-    position: absolute;
-    display: block;
-    width: 100%;
-    height: 100%;
-    transform: translateZ(1) rotateY(180deg);
-    z-index: 2;
-    backface-visibility: visible;
-
-}
-
 
 .face-up {
     animation-name: turn-to-front;
     animation-duration: 0.5s;
-    display: visible;
+    transform-style: preserve-3d;
 }
 
-/* 
-Hieronder staan de animaties, je kunt ze aanpassen door extra keyframes toe te voegen of de bestaande aan te passen.
+/* selectie classes */
 
-    Meer info:
-https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes
-*/
+.selected {
+    transform: rotateY(0deg) translateY(-22rem);
+}
+
+.selected:hover {
+    transform: rotateY(0deg) translateY(-22rem);
+}
+
+/* darkmode */
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --green: hotpink;
+        --card-background: rgb(63, 63, 63);
+        --card-shadow: #131313;
+        --purple: #81809b;
+        --blue: #64778b;
+        --green: #7a947b;
+        --yellow: #ba9e35;
+        --orange: #b4894f;
+    }
+
+    body {
+        background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg%27%3E<defs><pattern id='a' patternUnits='userSpaceOnUse' width='70' height='8' patternTransform='scale(2) rotate(0)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(0, 0%, 12%, 1)'/><path d='M-.02 22c8.373 0 11.938-4.695 16.32-9.662C20.785 7.258 25.728 2 35 2c9.272 0 14.215 5.258 18.7 10.338C58.082 17.305 61.647 22 70.02 22M-.02 14.002C8.353 14 11.918 9.306 16.3 4.339 20.785-.742 25.728-6 35-6 44.272-6 49.215-.742 53.7 4.339c4.382 4.967 7.947 9.661 16.32 9.664M70 6.004c-8.373-.001-11.918-4.698-16.3-9.665C49.215-8.742 44.272-14 35-14c-9.272 0-14.215 5.258-18.7 10.339C11.918 1.306 8.353 6-.02 6.002'  stroke-width='1' stroke='hsla(259, 0%, 16%, 1)' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>");
+    }
+
+    .light {
+        visibility: hidden;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    .dark {
+        visibility: hidden;
+    }
+}
+
+/* animaties */
 
 @keyframes turn-to-back {
     0% {
@@ -415,5 +540,26 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes
 
     100% {
         transform: translateY(0rem) rotateY(0deg);
+    }
+}
+
+/* responsive */
+
+@media (max-width: 500px) {
+    body {
+        background-color: hotpink;
+        display: inline-grid;
+    }
+
+    .title {
+        font-size: 5rem;
+    }
+
+    .scroll-container {
+        padding: 6em;
+    }
+
+    .toggle {
+        --width: 4em;
     }
 }
